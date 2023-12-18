@@ -1,0 +1,28 @@
+<html>
+    TESTE GIT
+
+    <body>
+
+      <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DDP0000060kOZ',
+				'Chat_in_App',
+				'https://cnpseguradora--integ.sandbox.my.site.com/ESWChatinApp1702650224029',
+				{
+					scrt2URL: 'https://cnpseguradora--integ.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://cnpseguradora--integ.sandbox.my.site.com/ESWChatinApp1702650224029/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+    </body>
+ 
+</html>
